@@ -1,0 +1,158 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8527DC7D-72CC-40B5-826E-7C64A785980C}|CadParcial2Relm\\CadParcial2Relm.csproj|c:\\users\\hp\\documents\\sis-457\\parcial2relm\\parcial2relm\\cadparcial2relm\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8527DC7D-72CC-40B5-826E-7C64A785980C}|CadParcial2Relm\\CadParcial2Relm.csproj|solutionrelative:cadparcial2relm\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8527DC7D-72CC-40B5-826E-7C64A785980C}|CadParcial2Relm\\CadParcial2Relm.csproj|c:\\users\\hp\\documents\\sis-457\\parcial2relm\\parcial2relm\\cadparcial2relm\\modelo.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8527DC7D-72CC-40B5-826E-7C64A785980C}|CadParcial2Relm\\CadParcial2Relm.csproj|solutionrelative:cadparcial2relm\\modelo.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8527DC7D-72CC-40B5-826E-7C64A785980C}|CadParcial2Relm\\CadParcial2Relm.csproj|c:\\users\\hp\\documents\\sis-457\\parcial2relm\\parcial2relm\\cadparcial2relm\\modelo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8527DC7D-72CC-40B5-826E-7C64A785980C}|CadParcial2Relm\\CadParcial2Relm.csproj|solutionrelative:cadparcial2relm\\modelo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E81363B-3FF4-4409-BB31-D57DE89A73D7}|CpParcial2Relm\\CpParcial2Relm.csproj|c:\\users\\hp\\documents\\sis-457\\parcial2relm\\parcial2relm\\cpparcial2relm\\frmprogramalistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6E81363B-3FF4-4409-BB31-D57DE89A73D7}|CpParcial2Relm\\CpParcial2Relm.csproj|solutionrelative:cpparcial2relm\\frmprogramalistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E81363B-3FF4-4409-BB31-D57DE89A73D7}|CpParcial2Relm\\CpParcial2Relm.csproj|c:\\users\\hp\\documents\\sis-457\\parcial2relm\\parcial2relm\\cpparcial2relm\\frmprogramalistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E81363B-3FF4-4409-BB31-D57DE89A73D7}|CpParcial2Relm\\CpParcial2Relm.csproj|solutionrelative:cpparcial2relm\\frmprogramalistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\ddl_dml_Parcial2Relm.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E81363B-3FF4-4409-BB31-D57DE89A73D7}|CpParcial2Relm\\CpParcial2Relm.csproj|c:\\users\\hp\\documents\\sis-457\\parcial2relm\\parcial2relm\\cpparcial2relm\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6E81363B-3FF4-4409-BB31-D57DE89A73D7}|CpParcial2Relm\\CpParcial2Relm.csproj|solutionrelative:cpparcial2relm\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E81363B-3FF4-4409-BB31-D57DE89A73D7}|CpParcial2Relm\\CpParcial2Relm.csproj|c:\\users\\hp\\documents\\sis-457\\parcial2relm\\parcial2relm\\cpparcial2relm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E81363B-3FF4-4409-BB31-D57DE89A73D7}|CpParcial2Relm\\CpParcial2Relm.csproj|solutionrelative:cpparcial2relm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\ddl_dml_Parcial2Relm.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\ddl_dml_Parcial2Relm.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CadParcial2Relm\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "CadParcial2Relm\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CadParcial2Relm\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "CadParcial2Relm\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T15:10:03.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Modelo.Context.tt",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CadParcial2Relm\\Modelo.Context.tt",
+              "RelativeDocumentMoniker": "CadParcial2Relm\\Modelo.Context.tt",
+              "ToolTip": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CadParcial2Relm\\Modelo.Context.tt",
+              "RelativeToolTip": "CadParcial2Relm\\Modelo.Context.tt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-01T15:09:36.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Modelo.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CadParcial2Relm\\Modelo.Designer.cs",
+              "RelativeDocumentMoniker": "CadParcial2Relm\\Modelo.Designer.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CadParcial2Relm\\Modelo.Designer.cs",
+              "RelativeToolTip": "CadParcial2Relm\\Modelo.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T15:09:27.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CpParcial2Relm\\Program.cs",
+              "RelativeDocumentMoniker": "CpParcial2Relm\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CpParcial2Relm\\Program.cs",
+              "RelativeToolTip": "CpParcial2Relm\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T14:48:36.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CpParcial2Relm\\App.config",
+              "RelativeDocumentMoniker": "CpParcial2Relm\\App.config",
+              "ToolTip": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CpParcial2Relm\\App.config",
+              "RelativeToolTip": "CpParcial2Relm\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-01T14:44:35.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ddl_dml_Parcial2Relm.sql ",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\ddl_dml_Parcial2Relm.sql",
+              "RelativeDocumentMoniker": "..\\ddl_dml_Parcial2Relm.sql",
+              "ToolTip": "ddl_dml_Parcial2Relm.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-01T14:37:19.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmProgramaListado.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CpParcial2Relm\\frmProgramaListado.cs",
+              "RelativeDocumentMoniker": "CpParcial2Relm\\frmProgramaListado.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CpParcial2Relm\\frmProgramaListado.cs",
+              "RelativeToolTip": "CpParcial2Relm\\frmProgramaListado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T14:11:05.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmProgramaListado.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CpParcial2Relm\\frmProgramaListado.cs",
+              "RelativeDocumentMoniker": "CpParcial2Relm\\frmProgramaListado.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\SIS-457\\Parcial2Relm\\Parcial2Relm\\CpParcial2Relm\\frmProgramaListado.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpParcial2Relm\\frmProgramaListado.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T14:10:50.759Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Parcial2RelmModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Canal">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="frecuencia" Type="varchar" MaxLength="20" />
+          <Property Name="estado" Type="smallint" Nullable="false" />
+          <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Programa">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idCanal" Type="int" Nullable="false" />
+          <Property Name="titulo" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="250" />
+          <Property Name="duracion" Type="int" />
+          <Property Name="productor" Type="varchar" MaxLength="100" />
+          <Property Name="fechaEstreno" Type="date" />
+          <Property Name="estado" Type="smallint" Nullable="false" />
+          <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Programa_Canal">
+          <End Role="Canal" Type="Self.Canal" Multiplicity="1" />
+          <End Role="Programa" Type="Self.Programa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Canal">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Programa">
+              <PropertyRef Name="idCanal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="paCanalActualizar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="frecuencia" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="paCanalEliminarLogico" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idCanal" Type="int" Mode="In" />
+        </Function>
+        <Function Name="paCanalInsertar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+          <Parameter Name="frecuencia" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="paCanalListar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="parametro" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="paProgramaActualizar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="idCanal" Type="int" Mode="In" />
+          <Parameter Name="titulo" Type="varchar" Mode="In" />
+          <Parameter Name="descripcion" Type="varchar" Mode="In" />
+          <Parameter Name="duracion" Type="int" Mode="In" />
+          <Parameter Name="productor" Type="varchar" Mode="In" />
+          <Parameter Name="fechaEstreno" Type="date" Mode="In" />
+        </Function>
+        <Function Name="paProgramaEliminarLogico" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idPrograma" Type="int" Mode="In" />
+        </Function>
+        <Function Name="paProgramaInsertar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idCanal" Type="int" Mode="In" />
+          <Parameter Name="titulo" Type="varchar" Mode="In" />
+          <Parameter Name="descripcion" Type="varchar" Mode="In" />
+          <Parameter Name="duracion" Type="int" Mode="In" />
+          <Parameter Name="productor" Type="varchar" Mode="In" />
+          <Parameter Name="fechaEstreno" Type="date" Mode="In" />
+        </Function>
+        <Function Name="paProgramaListar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="parametro" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="Parcial2RelmModelStoreContainer">
+          <EntitySet Name="Canal" EntityType="Self.Canal" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Programa" EntityType="Self.Programa" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Programa_Canal" Association="Self.FK_Programa_Canal">
+            <End Role="Canal" EntitySet="Canal" />
+            <End Role="Programa" EntitySet="Programa" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Parcial2RelmModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Canal">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="frecuencia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="estado" Type="Int16" Nullable="false" />
+          <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Programa" Relationship="Self.FK_Programa_Canal" FromRole="Canal" ToRole="Programa" />
+        </EntityType>
+        <EntityType Name="Programa">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idCanal" Type="Int32" Nullable="false" />
+          <Property Name="titulo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="duracion" Type="Int32" />
+          <Property Name="productor" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="fechaEstreno" Type="DateTime" Precision="0" />
+          <Property Name="estado" Type="Int16" Nullable="false" />
+          <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Canal" Relationship="Self.FK_Programa_Canal" FromRole="Programa" ToRole="Canal" />
+        </EntityType>
+        <Association Name="FK_Programa_Canal">
+          <End Role="Canal" Type="Self.Canal" Multiplicity="1" />
+          <End Role="Programa" Type="Self.Programa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Canal">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Programa">
+              <PropertyRef Name="idCanal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Parcial2RelmEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Canal" EntityType="Self.Canal" />
+          <EntitySet Name="Programa" EntityType="Self.Programa" />
+          <AssociationSet Name="FK_Programa_Canal" Association="Self.FK_Programa_Canal">
+            <End Role="Canal" EntitySet="Canal" />
+            <End Role="Programa" EntitySet="Programa" />
+          </AssociationSet>
+          <FunctionImport Name="paCanalActualizar">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="frecuencia" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="paCanalEliminarLogico">
+            <Parameter Name="idCanal" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="paCanalInsertar" ReturnType="Collection(Decimal)">
+            <Parameter Name="nombre" Mode="In" Type="String" />
+            <Parameter Name="frecuencia" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="paCanalListar" ReturnType="Collection(Parcial2RelmModel.paCanalListar_Result)">
+            <Parameter Name="parametro" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="paProgramaActualizar">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="idCanal" Mode="In" Type="Int32" />
+            <Parameter Name="titulo" Mode="In" Type="String" />
+            <Parameter Name="descripcion" Mode="In" Type="String" />
+            <Parameter Name="duracion" Mode="In" Type="Int32" />
+            <Parameter Name="productor" Mode="In" Type="String" />
+            <Parameter Name="fechaEstreno" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="paProgramaEliminarLogico">
+            <Parameter Name="idPrograma" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="paProgramaInsertar" ReturnType="Collection(Decimal)">
+            <Parameter Name="idCanal" Mode="In" Type="Int32" />
+            <Parameter Name="titulo" Mode="In" Type="String" />
+            <Parameter Name="descripcion" Mode="In" Type="String" />
+            <Parameter Name="duracion" Mode="In" Type="Int32" />
+            <Parameter Name="productor" Mode="In" Type="String" />
+            <Parameter Name="fechaEstreno" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="paProgramaListar" ReturnType="Collection(Parcial2RelmModel.paProgramaListar_Result)">
+            <Parameter Name="parametro" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="paCanalListar_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="frecuencia" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+          <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+          <Property Type="Int16" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="paProgramaListar_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Int32" Name="idCanal" Nullable="false" />
+          <Property Type="String" Name="titulo" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="descripcion" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="duracion" Nullable="true" />
+          <Property Type="String" Name="productor" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="fechaEstreno" Nullable="true" />
+          <Property Type="Int16" Name="estado" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Parcial2RelmModelStoreContainer" CdmEntityContainer="Parcial2RelmEntities1">
+          <EntitySetMapping Name="Canal">
+            <EntityTypeMapping TypeName="Parcial2RelmModel.Canal">
+              <MappingFragment StoreEntitySet="Canal">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="frecuencia" ColumnName="frecuencia" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+                <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Programa">
+            <EntityTypeMapping TypeName="Parcial2RelmModel.Programa">
+              <MappingFragment StoreEntitySet="Programa">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="idCanal" ColumnName="idCanal" />
+                <ScalarProperty Name="titulo" ColumnName="titulo" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="duracion" ColumnName="duracion" />
+                <ScalarProperty Name="productor" ColumnName="productor" />
+                <ScalarProperty Name="fechaEstreno" ColumnName="fechaEstreno" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+                <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="paCanalActualizar" FunctionName="Parcial2RelmModel.Store.paCanalActualizar" />
+          <FunctionImportMapping FunctionImportName="paCanalEliminarLogico" FunctionName="Parcial2RelmModel.Store.paCanalEliminarLogico" />
+          <FunctionImportMapping FunctionImportName="paCanalInsertar" FunctionName="Parcial2RelmModel.Store.paCanalInsertar" />
+          <FunctionImportMapping FunctionImportName="paCanalListar" FunctionName="Parcial2RelmModel.Store.paCanalListar">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Parcial2RelmModel.paCanalListar_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="frecuencia" ColumnName="frecuencia" />
+                <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+                <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="paProgramaActualizar" FunctionName="Parcial2RelmModel.Store.paProgramaActualizar" />
+          <FunctionImportMapping FunctionImportName="paProgramaEliminarLogico" FunctionName="Parcial2RelmModel.Store.paProgramaEliminarLogico" />
+          <FunctionImportMapping FunctionImportName="paProgramaInsertar" FunctionName="Parcial2RelmModel.Store.paProgramaInsertar" />
+          <FunctionImportMapping FunctionImportName="paProgramaListar" FunctionName="Parcial2RelmModel.Store.paProgramaListar">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Parcial2RelmModel.paProgramaListar_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="idCanal" ColumnName="idCanal" />
+                <ScalarProperty Name="titulo" ColumnName="titulo" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="duracion" ColumnName="duracion" />
+                <ScalarProperty Name="productor" ColumnName="productor" />
+                <ScalarProperty Name="fechaEstreno" ColumnName="fechaEstreno" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
